@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+
+/**
+ * Created by Yacine on 10/18/2017.
+ */
+public class VectorHelper {
+    public  ArrayList<Double> SortVec(ArrayList<Double> vec ){
+        for (int i=0;i<vec.size()-1;i++)
+        {
+
+            for (int j=0;j<vec.size()-1;j++){
+
+                if (vec.get(j)>vec.get(j+1)){
+
+                    Double x;
+                    x=vec.get(j);
+                    vec.set(j,vec.get(j+1));
+                    vec.set(j+1,x);
+                }
+            }
+        }
+
+        return vec;
+    }
+    public  ArrayList<Double> VecForm(ArrayList<Double> vec, String f,int n){
+       if(f.equals("+")){
+
+
+        for (int i=0;i<vec.size();i++) {
+           vec.set(i,(vec.get(i)+n)) ;
+        }
+       }
+       if(f.equals("-")){
+
+
+           for (int i=0;i<vec.size();i++) {
+               vec.set(i,(vec.get(i)-n)) ;
+           }
+       }
+        if(f.equals("*")){
+
+
+            for (int i=0;i<vec.size();i++) {
+                vec.set(i,(vec.get(i)*n)) ;
+            }
+        }
+        if(f.equals("/")){
+
+
+            for (int i=0;i<vec.size();i++) {
+                vec.set(i,(vec.get(i)/n)) ;
+            }
+        }
+
+
+        return vec;
+    }
+
+}
