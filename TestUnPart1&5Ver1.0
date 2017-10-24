@@ -1,0 +1,23 @@
+import static org.junit.Assert.*;
+
+/**
+ * Created by Yacine on 10/23/2017.
+ */
+public class VectorHelperTest {
+    @org.junit.Test
+    public void vectorHelper() throws Exception {
+
+    }
+
+    @org.junit.Test
+    public void sortVec() throws Exception {
+
+        assertTrue("min = 15", sortVec(v) == 15);
+    }
+
+    @org.junit.Test
+    public void vecForm() throws Exception {
+
+    }
+
+}
